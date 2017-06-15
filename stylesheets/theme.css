@@ -1,0 +1,407 @@
+@charset "UTF-8";
+/* line 5, /home/slava/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, /home/slava/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, /home/slava/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, /home/slava/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, /home/slava/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, /home/slava/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, /home/slava/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, /home/slava/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, /home/slava/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+@font-face {
+  font-family: 'fontello';
+  src: url("../font/fontello.eot?16218589");
+  src: url("../font/fontello.eot?16218589#iefix") format("embedded-opentype"), url("../font/fontello.woff?16218589") format("woff"), url("../font/fontello.ttf?16218589") format("truetype"), url("../font/fontello.svg?16218589#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* line 14, /home/slava/apps/frontend-test/source/stylesheets/_icons.css.scss */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+/* line 36, /home/slava/apps/frontend-test/source/stylesheets/_icons.css.scss */
+.icon-gplus:before {
+  content: '\e800'; }
+
+/* '' */
+/* line 37, /home/slava/apps/frontend-test/source/stylesheets/_icons.css.scss */
+.icon-youtube:before {
+  content: '\e801'; }
+
+/* '' */
+/* line 38, /home/slava/apps/frontend-test/source/stylesheets/_icons.css.scss */
+.icon-twitter:before {
+  content: '\e802'; }
+
+/* '' */
+/* line 39, /home/slava/apps/frontend-test/source/stylesheets/_icons.css.scss */
+.icon-facebook:before {
+  content: '\e803'; }
+
+/* '' */
+/* line 40, /home/slava/apps/frontend-test/source/stylesheets/_icons.css.scss */
+.icon-linkedin:before {
+  content: '\e804'; }
+
+/* '' */
+/* line 41, /home/slava/apps/frontend-test/source/stylesheets/_icons.css.scss */
+.icon-email:before {
+  content: '\e805';
+  font-size: 90%; }
+
+/* '' */
+/* line 42, /home/slava/apps/frontend-test/source/stylesheets/_icons.css.scss */
+.icon-vcard:before {
+  content: '\e806';
+  font-size: 90%; }
+
+/* '' */
+/* line 43, /home/slava/apps/frontend-test/source/stylesheets/_icons.css.scss */
+.icon-search:before {
+  content: '\e807'; }
+
+/* '' */
+/* line 44, /home/slava/apps/frontend-test/source/stylesheets/_icons.css.scss */
+.icon-plus:before {
+  content: '\e808'; }
+
+/* '' */
+/* line 45, /home/slava/apps/frontend-test/source/stylesheets/_icons.css.scss */
+.icon-minus:before {
+  content: '\e809'; }
+
+/* '' */
+
+@font-face {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../font/fontello.eot#iefix") format("embedded-opentype"), url("../font/fontello.woff") format("woff"), url("../font/fontello.ttf") format("truetype"), url("../font/fontello.svg#fontello") format("svg");
+}
+
+body{
+	background-color: #020101;
+}
+
+.bg-image {
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+    width: 100%;
+}
+.bg-image img {
+	height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.menu {
+    background: #dd1a23 none repeat scroll 0 0;
+    border: medium none;
+    display: inline-block;
+    height: 50px;
+    left: 4.8em;
+    margin: -0.75em 0 0 -0.5em;
+    opacity: 0;
+    padding: 2em 0.5em 0;
+    position: fixed;
+    top: 4.8em;
+    transition: visibility 0.5s ease-out 0s, opacity 0.5s ease-out 0s;
+    visibility: hidden;
+    width: 50px;
+    z-index: 101;
+}
+.menu.shown {
+    opacity: 1;
+    visibility: visible;
+}
+.menu .lines {
+    background: white none repeat scroll 0 0;
+    display: inline-block;
+    height: 5px;
+    opacity: 0.8;
+    position: relative;
+    transition: background-color 0.5s ease-out 0s, opacity 0.5s ease-out 0s;
+    width: 10px;
+}
+.menu .lines::before, .menu .lines::after {
+    background: white none repeat scroll 0 0;
+    content: "";
+    display: inline-block;
+    height: 0.5em;
+    left: 0;
+    position: absolute;
+    transform: translate(0px, 0px);
+    transition: background-color 0.5s ease-out 0s, transform 0.3s ease-out 0s;
+    width: 3.65em;
+}
+.menu .lines::before {
+    top: 1.25em;
+}
+.menu .lines::after {
+    top: -1.25em;
+}
+.menu .menu-label {
+    color: white;
+    display: block;
+    font-family: "Roboto Condensed","Arial",sans-serif;
+    font-size: 1.7em;
+    font-weight: 700;
+    margin-top: 0.55em;
+    opacity: 0.8;
+    text-align: center;
+    text-transform: lowercase;
+    transition: color 0.5s ease-out 0s, opacity 0.5s ease-out 0s;
+}
+.menu:hover .lines {
+    background: white none repeat scroll 0 0;
+    opacity: 1;
+}
+.menu:hover .lines::before {
+    background: white none repeat scroll 0 0;
+    transform: translate(0px, 1px);
+}
+.menu:hover .lines::after {
+    background: white none repeat scroll 0 0;
+    transform: translate(0px, -1px);
+}
+.menu:hover .menu-label {
+    color: white;
+    opacity: 1;
+}
+.menu.x .lines {
+    background: transparent none repeat scroll 0 0;
+    filter: none;
+    opacity: 1;
+}
+.menu.x .lines::before, .menu.x .lines::after {
+    opacity: 1;
+    top: 0;
+    transform-origin: 50% 50% 0;
+    width: 3.65em;
+}
+.menu.x .lines::before {
+    transform: rotate3d(0, 0, 1, 45deg);
+}
+.menu.x .lines::after {
+    transform: rotate3d(0, 0, 1, -45deg);
+}
+.menu.x .menu-label {
+    opacity: 1;
+}
+header {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    position: fixed;
+    text-align: center;
+    top: 4.8em;
+    width: 100%;
+    z-index: 100;
+}
+header .logo {
+    height: 173px;
+    left: 50%;
+    margin: -86.5px auto 0 -150px;
+    position: fixed;
+    right: 0;
+    top: 20%;
+    transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+    width: 300px;
+}
+header .logo img, header .logo a {
+    height: 100%;
+    width: 100%;
+}
+.main {
+	width: 80%;
+	height: 100%;
+	
+	position:absolute; /*it can be fixed too*/
+	left:0; 
+	right:0;
+	top:0; 
+	bottom:0;
+	margin:200px auto 0;
+	
+	/*this to solve "the content will not be cut when the window is smaller than the content": */
+	max-width:100%;
+	max-height:100%;
+	overflow:hidden;
+}
+.article-body.scroller-block {
+    bottom: 150px;
+    height: 200px;
+    position: relative;
+}
+.main { 
+	top:10em;
+}
+.main .content {
+    font-family: "Roboto Condensed","Arial",sans-serif;
+    left: 10%;
+    position: absolute;
+    top: 0;
+}
+.left-section .go-back{
+	display:block;	
+} 
+
+.left-section .go-back .publication-link{
+	color: #dd1a23;
+    display: inline-block;
+    margin-left: -3em;
+    padding-left: 3em;
+    text-decoration: none;
+    transition: color 0.5s ease-out 0s, margin-left 0.5s ease-out 0s, padding-left 0.5s ease-out 0s;
+	background: rgba(0, 0, 0, 0) url("../images/back_arrow.png") no-repeat scroll -3px -5px / contain 
+}
+
+.frame.nonitembased p{
+	color:#ffffff;
+	
+}
+
+.left-section  { width:20%; float:left; }
+.right-section  { width:80%; float:right; }
+.left-section .go-back span{
+	font-weight:300;
+}
+
+.left-section .go-back h1{
+	font-size:40px;
+}
+
+/* Example wrapper */
+.wrap {
+	position: relative;
+	float: left;
+	width: 550px;
+	margin: 0 40px 3em 0;
+}
+.wrap:nth-child(2n) { margin-right: 0; }
+.right-section, .left-section{
+	position:relative;
+}
+/* Frame */
+.frame {
+	width: 80%;
+	padding: 2%;
+	height: 300px;
+	overflow: hidden;
+}
+.frame .slidee {
+	padding: 20px 25px;
+	background: transparent;
+}
+.frame ul.items {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-size: 24px;
+	line-height: 100px;
+}
+.frame ul.items li {
+	float: left;
+	width: 100%;
+	height: 100px;
+	margin: 0 0 1px;
+	padding: 0;
+	background: #333;
+	color: #ddd;
+	text-align: center;
+	cursor: pointer;
+}
+.frame ul.items li.active {
+	color: #fff;
+	background: #a03232;
+}
+
+/* Scrollbar */
+.scrollbar {
+	position: absolute;
+	right: 0px;
+	width: 2px;
+	height: 300px;
+	background: #ccc;
+	line-height: 0;
+}
+.scrollbar .handle {
+	width: 100%;
+	height: 100px;
+	background: #292a33;
+	cursor: pointer;
+}
+.scrollbar .handle .mousearea {
+	position: absolute;
+	top: 0;
+	left: -10px;
+	width: 22px;
+	height: 100%;
+}
+.frame.smart img{
+	width:100%;
+}

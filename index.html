@@ -1,0 +1,264 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HTML/CSS/JS Test</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Condensed:700,400,400italic,300,300italic">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Muli:300,300italic">
+
+    <!--[if lte IE 8]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="stylesheets/theme.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+	<div class="bg-image">
+		<img src="images/background.jpg" alt="background"/>
+	</div>
+    <header>
+      <div class="logo">
+		<a href="javascript:void(0);">
+			<img src="images/logo.png" alt="Basman Smith"/>
+		</a>
+	  </div>
+	  <!--<button class="menu shown" type='button'>
+		<span class='lines'></span>
+		<span class='menu-label'>
+			Menu
+		</span>
+	</button>-->
+    </header>
+	<section class="main">
+		<div class="left-section">
+			<div class="go-back">
+				<a href="javascript:void(0);" class="publication-link">
+					<span>go back to</span>
+					<h1>Publications</h1>
+				</a>
+				<div class="scrollbar">
+					<div class="handle">
+						<div class="mousearea"></div>
+					</div>
+				</div>
+				<div class="frame smart" id="smart">
+					<ul class='single'>
+									<li>
+										<img alt="photo" src="images/photo.png" />
+											<div class='info'>
+												<p class='label'>About the Author</p>
+												<p class='name'>
+													<span class="white">Jennifer Samara</span> <span class="red">Shuber</span>
+												</p>
+												<p class='email'>
+													<a href="mailto:jshuber@basmansmith.com">jshuber@basmansmith.com</a>
+												</p>
+												<p class='phone'>
+													416-860-1950
+												</p>
+												<p class='link'>
+													<a href="javascript:void(0);">View Bio</a>
+												</p>
+											</div>
+									</li>
+								</ul>
+				</div>
+			</div>
+		</div>
+		<div class="right-section">
+			<article class="upper-content">
+				<h3 class="date">
+					Feb 13, 2014
+				</h3>
+				<h2 class="title">
+					Child Support for A Child Away at University
+				</h2>
+				<div class="social-links">
+					<a href="javascript:void(0);" title="LinkedIn" class="s-linkedin"></a>
+					<a href="javascript:void(0);" title="Twitter" class="s-twitter"></a>
+					<a href="javascript:void(0);" title="Facebook" class="s-facebook"></a>
+					<a href="javascript:void(0);" title="Email" class="s-email"></a>
+				</div>
+				<div class="scrollbar">
+					<div class="handle">
+						<div class="mousearea"></div>
+					</div>
+				</div>
+				<div class="content">
+					
+					<div class='frame nonitembased' id="nonitembased">
+						<div class="slidee">
+								<p>Many support payors are under the impression that child support ceases when that child leaves home to attend a post-secondary institution. Our courts, however, have taken a different approach. Child support is reduced but not eliminated. In these cases, the issue is whether the parent receiving child support must reasonably maintain a home base for that child.</p>
+
+								<p>Subsection 31(1) of the Family Law Act, provides that each parent has an obligation to provide support for his or her unmarried child who is a minor or is enrolled in a full-time program of education, to the extent that the parent is capable of doing so. Child support for a child over the age of majority is paid in accordance with section 3(2) of the Child Support Guidelines. That section requires a payor to pay the table amount of child support unless the court considers the table amount to be inappropriate. Interestingly enough, the definition of inappropriate is not consistent from province to province. However, it is the Ontario law that is relevant for our purposes.</p>
+
+								<p>The Ontario Court of Appeal has held that the table amount is prima facie inappropriate. Once that is the case, then court has to determine an appropriate amount, based on the condition, means, needs and other circumstances of the child and the financial ability of each spouse to contribute to the support of the child.</p>
+
+								<p>The cases have seen child support paid as either a reduced amount over 12 months of the year or full support for the 4 months the child is at home and no support for the 8 months the child is away at school. The courts seem to acknowledge that, even though the child is living away at school, it is normally in the child&rsquo;s best interest for the parent with whom he or she resided to maintain a home for the child to return to on school breaks. It is accepted that maintaining a permanent home for the child results in incidental expenses that subsist even in the child&rsquo;s temporary absence.</p>
+
+								<p>The question then becomes what is the cost of maintaining that home base? Budgets, which we had thought went the way of the dodo in child support cases, are back. A support recipient will need to show the cost of maintaining a home for the child away at university. It must be part of the evidence led in order to be considered by the court.</p>
+								<p class="image_author">Photography by Ben Grey</p>
+							</div>
+							</div>
+	
+				</div>
+			</article>
+		</div>
+	</section>
+    <div class="welcome">
+		
+
+
+		<i class="icon-twitter"></i>
+
+
+	</div>
+
+
+    <script src="javascripts/all.js" type="text/javascript"></script>
+    <script src="javascripts/namespace.js" type="text/javascript"></script>
+    <script src="javascripts/app.js" type="text/javascript"></script>
+    <script src="javascripts/plugins.js" type="text/javascript"></script>
+	
+    <script>
+    var app = new pixelcarve.app();
+    //app.start();
+		
+    </script>
+	<script type="text/javascript">
+		jQuery(function($){
+	'use strict';
+
+	// -------------------------------------------------------------
+	//   Non Item Based Navigation
+	// -------------------------------------------------------------
+	(function () {
+		var $frame = $('#nonitembased');
+		var $wrap  = $frame.parent();
+
+		// Call Sly on frame
+		$frame.sly({
+			speed: 300,
+			easing: 'easeOutExpo',
+			pagesBar: $wrap.find('.pages'),
+			activatePageOn: 'click',
+			scrollBar: $wrap.find('.scrollbar'),
+			scrollBy: 100,
+			dragHandle: 1,
+			dynamicHandle: 1,
+			clickBar: 1,
+
+			// Buttons
+			forward: $wrap.find('.forward'),
+			backward: $wrap.find('.backward'),
+			prevPage: $wrap.find('.prevPage'),
+			nextPage: $wrap.find('.nextPage')
+		});
+
+		// To Start button
+		$wrap.find('.toStart').on('click', function () {
+			var item = $(this).data('item');
+			// Animate a particular item to the start of the frame.
+			// If no item is provided, the whole content will be animated.
+			$frame.sly('toStart', item);
+		});
+
+		// To Center button
+		$wrap.find('.toCenter').on('click', function () {
+			var item = $(this).data('item');
+			// Animate a particular item to the center of the frame.
+			// If no item is provided, the whole content will be animated.
+			$frame.sly('toCenter', item);
+		});
+
+		// To End button
+		$wrap.find('.toEnd').on('click', function () {
+			var item = $(this).data('item');
+			// Animate a particular item to the end of the frame.
+			// If no item is provided, the whole content will be animated.
+			$frame.sly('toEnd', item);
+		});
+	}());
+
+	// -------------------------------------------------------------
+	//   Smart Navigation
+	// -------------------------------------------------------------
+	(function () {
+		var $frame  = $('#smart');
+		var $slidee = $frame.children('ul').eq(0);
+		var $wrap   = $frame.parent();
+
+		// Call Sly on frame
+		$frame.sly({
+			itemNav: 'basic',
+			smart: 1,
+			activateOn: 'click',
+			mouseDragging: 1,
+			touchDragging: 1,
+			releaseSwing: 1,
+			startAt: 3,
+			scrollBar: $wrap.find('.scrollbar'),
+			scrollBy: 1,
+			pagesBar: $wrap.find('.pages'),
+			activatePageOn: 'click',
+			speed: 300,
+			elasticBounds: 1,
+			easing: 'easeOutExpo',
+			dragHandle: 1,
+			dynamicHandle: 1,
+			clickBar: 1,
+
+			// Buttons
+			forward: $wrap.find('.forward'),
+			backward: $wrap.find('.backward'),
+			prev: $wrap.find('.prev'),
+			next: $wrap.find('.next'),
+			prevPage: $wrap.find('.prevPage'),
+			nextPage: $wrap.find('.nextPage')
+		});
+
+		// To Start button
+		$wrap.find('.toStart').on('click', function () {
+			var item = $(this).data('item');
+			// Animate a particular item to the start of the frame.
+			// If no item is provided, the whole content will be animated.
+			$frame.sly('toStart', item);
+		});
+
+		// To Center button
+		$wrap.find('.toCenter').on('click', function () {
+			var item = $(this).data('item');
+			// Animate a particular item to the center of the frame.
+			// If no item is provided, the whole content will be animated.
+			$frame.sly('toCenter', item);
+		});
+
+		// To End button
+		$wrap.find('.toEnd').on('click', function () {
+			var item = $(this).data('item');
+			// Animate a particular item to the end of the frame.
+			// If no item is provided, the whole content will be animated.
+			$frame.sly('toEnd', item);
+		});
+
+		// Add item
+		$wrap.find('.add').on('click', function () {
+			$frame.sly('add', '<li>' + $slidee.children().length + '</li>');
+		});
+
+		// Remove item
+		$wrap.find('.remove').on('click', function () {
+			$frame.sly('remove', -1);
+		});
+	}());
+});
+  </script>
+  </body>
+</html>
